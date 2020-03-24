@@ -1,0 +1,4 @@
+<div class="toolbar" role="banner">
+  <span class="ml">Welcome to {{title | uppercase }}<span class="cp" routerLink="/home" *ngIf="router.url !== '/home'"> | Home</span></span>
+</div>
+<router-outlet></router-outlet>

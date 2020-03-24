@@ -1,0 +1,31 @@
+<div class="content">
+  <a class="card" *ngIf="title === 'Tic-Tac-Toe'">Welcome to {{title}}</a>
+
+<section class="game" *ngIf="title === 'Tic-Tac-Toe'">
+  <div class="game-board">
+    <div class="clearfix">
+      <app-cells *ngFor="let cell of cells | slice: 0: 3; let i = index" [value]="cell" (userClick)=clickHandler(i)></app-cells><br>
+    </div>
+    <div class="clearfix">
+        <app-cells *ngFor="let cell of cells | slice: 3: 6; let i = index" [value]="cell" (userClick)=clickHandler(i+3)></app-cells><br>
+    </div>
+    <div class="clearfix">
+        <app-cells *ngFor="let cell of cells | slice: 6; let i = index" [value]="cell" (userClick)=clickHandler(i+6)></app-cells><br>
+    </div>
+  </div>    
+</section>
+<footer>
+  <span class="winner-bar" *ngIf="winner && winner !== ' '">
+    Congratulations {{winner}} ... !!!
+  </span>
+  <span class="winner-bar" *ngIf="winner === ' '">
+    Match Draw ... !!!
+  </span> <br />
+<a class="card cp" *ngIf="winner" (click)="init()">
+  Reset
+</a>
+</footer>
+<a class="card" *ngIf="title !== 'Tic-Tac-Toe'">{{title}} is in progress...</a>
+
+
+</div>

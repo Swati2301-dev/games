@@ -1,0 +1,26 @@
+.game{
+    text-align: center;
+}
+
+.game-board{
+    display: table;
+    padding: 17px 7px 7px 17px;
+    background-color: white;
+    -webkit-box-shadow: 3px 4px 11px 3px #ccc;
+    -moz-box-shadow: 3px 4px 11px 3px #ccc;
+    box-shadow: 3px 4px 11px 3px #ccc;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.winner-bar {
+    border-radius: 4px;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    height: 40px;
+    width: 200px;
+    margin: 0 8px 16px;
+    padding: 16px;
+    line-height: 24px;
+    color: #008000;
+  }

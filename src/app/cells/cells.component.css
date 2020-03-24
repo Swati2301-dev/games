@@ -1,0 +1,11 @@
+div {
+    height: 30px;
+    width: 30px;
+    background-color: #008000;
+    float: left;
+    margin: 0px 12px 12px 0;
+    color: white;
+    border-radius: 5px;
+    padding-top: 5px;
+    font-weight: bolder;
+}
